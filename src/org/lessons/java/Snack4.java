@@ -10,13 +10,13 @@ public class Snack4 {
         System.out.println("Inserisci una stringa: ");
         String input = scanner.nextLine();
 
-        boolean isPalindroma = false;
+        boolean isPalindroma = true;
 
         for (int i = 0; i < input.length(); i++) {
-//            if (input.charAt(i) == ){
-////                isPalindroma = true;
-////
-////            }
+            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+                isPalindroma = false;
+                break;
+            }
         }
 
         if (isPalindroma) {
