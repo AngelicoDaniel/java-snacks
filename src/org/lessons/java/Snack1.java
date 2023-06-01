@@ -14,5 +14,6 @@ public class Snack1 {
         } else {
             System.out.println(number + 1);
         }
+        scanner.close();
     }
 }
